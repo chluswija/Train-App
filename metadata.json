@@ -1,0 +1,6 @@
+{
+  "name": "NLCI .NET Train Booking Portal & ADO.NET Case Study",
+  "description": "Enterprise ASP.NET & ADO.NET Train Booking CRUD System, Database Explorer, C# Code Generator & Certification Case Study Suite for NLCI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
