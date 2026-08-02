@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: var(--accent, #D8F9B8);
+  --color-primary-dark: var(--accent-dark, #b2e685);
+}
+
+/* Environment Theme Variables */
+.theme-dark-emerald {
+  --accent: #D8F9B8;
+  --accent-fg: #121414;
+  --nav-bg: #1e2020;
+  --card-bg: #1e2020;
+  --card-border: rgba(255, 255, 255, 0.12);
+  --card-text: #f5f5f4;
+  --muted-text: #a8a29e;
+  --canvas-bg: #121414;
+  --subcard-bg: #2b2d2d;
+  --badge-bg: rgba(216, 249, 184, 0.15);
+  --badge-text: #D8F9B8;
+}
+
+.theme-light-pearl {
+  --accent: #0f172a;
+  --accent-fg: #ffffff;
+  --nav-bg: #0f172a;
+  --card-bg: #ffffff;
+  --card-border: #cbd5e1;
+  --card-text: #0f172a;
+  --muted-text: #64748b;
+  --canvas-bg: #f1f5f9;
+  --subcard-bg: #f8fafc;
+  --badge-bg: rgba(15, 23, 42, 0.1);
+  --badge-text: #0f172a;
+}
+
+.theme-navy-gold {
+  --accent: #f59e0b;
+  --accent-fg: #0b132b;
+  --nav-bg: #1c2541;
+  --card-bg: #1c2541;
+  --card-border: rgba(245, 158, 11, 0.25);
+  --card-text: #f8fafc;
+  --muted-text: #94a3b8;
+  --canvas-bg: #0b132b;
+  --subcard-bg: #111d3d;
+  --badge-bg: rgba(245, 158, 11, 0.2);
+  --badge-text: #f59e0b;
+}
+
+.theme-forest-mint {
+  --accent: #34d399;
+  --accent-fg: #06140e;
+  --nav-bg: #0f291e;
+  --card-bg: #0f291e;
+  --card-border: rgba(52, 211, 153, 0.25);
+  --card-text: #f0fdf4;
+  --muted-text: #86efac;
+  --canvas-bg: #06140e;
+  --subcard-bg: #143829;
+  --badge-bg: rgba(52, 211, 153, 0.2);
+  --badge-text: #34d399;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--canvas-bg);
+  color: var(--card-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header-nav-bg {
+  background-color: var(--nav-bg, #1e2020);
+}
+
+.theme-card {
+  background-color: var(--card-bg);
+  border-color: var(--card-border);
+  color: var(--card-text);
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-subcard {
+  background-color: var(--subcard-bg);
+  border-color: var(--card-border);
+  color: var(--card-text);
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.bg-accent {
+  background-color: var(--accent, #D8F9B8);
+}
+
+.text-accent {
+  color: var(--accent, #D8F9B8);
+}
+
+.text-accent-foreground {
+  color: var(--accent-fg, #121414);
+}
+
+.border-theme {
+  border-color: var(--card-border);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(150, 150, 150, 0.6);
+}
